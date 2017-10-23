@@ -7,17 +7,9 @@
 	<!-- Offical Devices -->
 		<project name="LineageOS/android_device_alcatel_idol3" path="device/alcatel/idol3" remote="github" />
 
-	 	
-	<!-- Samsung SM-J727P, j7poplte -->
-		<project path="device/samsung/j7popltespr" name="Galaxy-J727/android_device_samsung_j7popltespr-twrp" remote="git" revision="android-7.1" />
- 		 <project path="device/TeamWin/qcom/common" name="TeamWin/android_device_qcom_common" remote="git" revision="android-7.1" />
-		<project path="kernel/samsung/j7poplte" name="Galaxy-J727/android_kernel_samsung_j7poplte" remote="github" revision="cm-14.1" />
-		<project path="device/samsung/msm8953-common" name="Galaxy-J727/android_device_samsung_msm8953-common" remote="git" revision="android-7.1" />
-		<project path="device/samsung/j7poplte-common" name="Galaxy-J727/android_device_samsung_j7poplte-common" remote="git" revision="android-7.1" />
-
 
   	<!-- kernel -->
-    	<project name="slickrickstyle/android_kernel_tcl_pop35" path="kernel/TCL/Pop35" remote="git" revision="master" />
+    	<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/Pop35" remote="git" revision="master" />
 		<project name="LineageOS/android_kernel_alcatel_msm8916" path="kernel/alcatel/msm8916" remote="github" />
     
 
