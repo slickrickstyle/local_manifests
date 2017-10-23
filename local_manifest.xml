@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>         
+           <remote  name="git"
+           fetch="https://github.com/" />
+
+	<!-- Offical Devices -->
+		<project name="LineageOS/android_device_alcatel_idol3" path="device/alcatel/idol3" remote="github" />
+
+
+  	<!-- kernel -->
+    	<project name="slickrickstyle/android_kernel_tcl_pop35" path="kernel/TCL/Pop35" remote="git" revision="master" />
+		<project name="LineageOS/android_kernel_alcatel_msm8916" path="kernel/alcatel/msm8916" remote="github" />
+    
+
+  	<!-- device -->
+    	<project name="slickrickstyle/android_device_tcl_pop35" path="device/TCL/Pop35" remote="git" revision="master" />
+		<project name="slickrickstyle/android_device_alcatel_pop35" path="device/alcatel/pop35-twrp" remote="git" revision="TWRP" />
+      
+
+  	<!-- device common -->
+        <project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="git" />
+      
+
+    <!-- vendor -->
+        <project name="slickrickstyle/android_vendor_tcl_pop35" path="vendor/TCL/Pop35" remote="git" revision="master" />
+        <project name="TheMuppets/proprietary_vendor_alcatel" path="vendor/alcatel" remote="git" />
+  
+
+   	<!-- qcom common -->
+		<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+		
+	<!-- qcom prima wlan -->
+		<project name="LineageOS/android_vendor_qcom_opensource_wlan_prima" path="vendor/qcom/opensource/wlan/prima" remote="github" />
+
+  	<!-- common -->
+		<project name="LineageOS/android_external_stlport" path="external/stlport" />
+		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="github" />
+
+
+  	<!-- TWRP -->
+		<remove-project name="LineageOS/android_bootable_recovery" />
+		<project name="OmniRom/android_bootable_recovery" path="bootable/recovery" remote="git" revision="android-8.0" />
+
+</manifest>
+
