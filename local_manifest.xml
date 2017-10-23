@@ -5,12 +5,12 @@
            fetch="https://github.com/" />
 
 	<!-- Offical Devices -->
-		<project name="LineageOS/android_device_alcatel_idol3" path="device/alcatel/idol3" remote="github" />
+		<project name="LineageOS/android_device_alcatel_idol3" path="device/alcatel/idol3" remote="git" />
 
 
   	<!-- kernel -->
     	<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/Pop35" remote="git" revision="master" />
-		<project name="LineageOS/android_kernel_alcatel_msm8916" path="kernel/alcatel/msm8916" remote="github" />
+		<project name="LineageOS/android_kernel_alcatel_msm8916" path="kernel/alcatel/msm8916" remote="git" />
     
 
   	<!-- device -->
@@ -28,19 +28,14 @@
   
 
    	<!-- qcom common -->
-		<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
-		
-	<!-- qcom prima wlan -->
-		<project name="LineageOS/android_vendor_qcom_opensource_wlan_prima" path="vendor/qcom/opensource/wlan/prima" remote="github" />
+		<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="git" />
 
   	<!-- common -->
 		<project name="LineageOS/android_external_stlport" path="external/stlport" />
-		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="github" />
+		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="git" />
 
 
   	<!-- TWRP -->
-		<remove-project name="LineageOS/android_bootable_recovery" />
-		<project name="OmniRom/android_bootable_recovery" path="bootable/recovery" remote="git" revision="android-8.0" />
-
+  		<project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="git" revision="android-7.1" />
 </manifest>
 
