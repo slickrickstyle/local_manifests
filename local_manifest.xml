@@ -1,45 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Please do not manually edit this file-->
-<manifest>         
-           <remote  name="git"
-           fetch="https://github.com/" />
-
-	<!-- Offical Devices -->
-		<project name="LineageOS/android_device_alcatel_idol3" path="device/alcatel/idol3" remote="git" />
-
-
-  	<!-- kernel -->
-    	<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/Pop35" remote="git" revision="master" />
-		<project name="LineageOS/android_kernel_alcatel_msm8916" path="kernel/alcatel/msm8916" remote="git" />
-		<project name="slickrickstyle/android_kernel_huawei_msm8909" path="kernel/huawei/msm909" remote="git" revision="master" />
-    
-
-  	<!-- device -->
-    	<project name="slickrickstyle/android_device_tcl_pop35" path="device/TCL/Pop35" remote="git" revision="master" />
-		<project name="slickrickstyle/android_device_alcatel_pop35" path="device/alcatel/pop35-twrp" remote="git" revision="TWRP" />
-	    <project name="slickrickstyle/android_device_huawei_y6" path="device/huawei/y6" remote="git" revision="master" />
-      
-
-  	<!-- device common -->
-        <project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="git" />
-      
-
-    <!-- vendor -->
-        <project name="slickrickstyle/android_vendor_tcl_pop35" path="vendor/TCL/Pop35" remote="git" revision="master" />
-        <project name="TheMuppets/proprietary_vendor_alcatel" path="vendor/alcatel" remote="git" />
-        <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="git" />
-		<project name="slickrickstyle/android_vendor_huawei_y6" path="vendor/huawei/y6" remote="git" revision="master" />
-  
-
-   	<!-- qcom common -->
-		<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="git" />
-		<project name="LineageOS/android_vendor_qcom_opensource_prima_wlan" path="vendor/qcom/opensource/prima/wlan" remote="git" revision="LA.BR.1.2.6_rb1.12" />
-  	<!-- common -->
-		<project name="LineageOS/android_external_stlport" path="external/stlport" />
-		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="git" />
-
-
-  	<!-- TWRP -->
-  		<project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="git" revision="android-7.1" />
-</manifest>
-
+	<?xml version="1.0" encoding="UTF-8"?> <manifest>
+	<remote  name="git"
+	fetch="https://github.com/" />
+	
+	<!-- Alcatel Pop3 (5) 5065D -->
+	<project path="device/alcatel/pop35" name="zombah/android_device_alcatel_pop35" remote="git" revision="cm-12.1" />
+	<project path="kernel/alcatel/msm8909" name="zombah/android_kernel_alcatel_msm8909" remote="git" revision="cm-12.1-wip" />
+	<project path="vendor/alcatel/pop35" name="zombah/proprietary_vendor_alcatel_pop35" remote="git" revision="cm-12.1" />
+	
+	
+	<!-- kernel -->
+	<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/pop35" remote="git" revision="cm-14.1" />
+	
+	<!-- device -->
+	
+	<!-- vendor -->
+	
+	<!-- qcom common -->
+	<project name="LineageOS/android_vendor_qcom_opensource_wlan_prima" path="vendor/qcom/opensource/wlan/prima" remote="git" revision="LA.BR.1.2.6_rb1.12" />
+	<!-- common -->
+	<project name="LineageOS/android_external_stlport" path="external/stlport" remote="git" //>
+	<project name="LineageOS/android_external_busybox" path="external/busybox" remote="git" />
+	
+	
+	<!-- TWRP -->
+	<project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="git" revision="android-7.1" />
+	
+	</manifest>
+	
