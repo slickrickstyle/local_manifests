@@ -20,6 +20,7 @@
 
 		<!-- kernel -->
   <project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/pop35" remote="private" revision="cm-14.1" />
+  <project name="LineageOS/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="git" revision="cm-14.1" />
 	
 		<!-- device -->
 	
@@ -34,7 +35,7 @@
   <project name="LineageOS/android_external_chromium_org" path="external/chromium_org" remote="git" revision="cm-12.1" />
   <project name="LineageOS/android_external_gcc-demangle" path="external/gcc-demangle" remote="git" revision="cm-11.0" />
   <project name="LineageOS/android_external_genext2fs" path="external/genext2fs" remote="git" revision="cm-11.0" />
-  <project name="LineageOS/android_external_android_jpeg" path="external/jpeg" remote="git" revision="cm-13.0" />
+  <project name="LineageOS/android_external_jpeg" path="external/jpeg" remote="git" revision="cm-13.0" />
   <project name="LineageOS/android_external_libsepol" path="external/libsepol" remote="git" revision="cm-13.0" />
   <project name="LineageOS/android_external_linux-tools-perf" path="external/linux-tools-perf" remote="git" revision="cm-13.0" />
   <project name="LineageOS/android_external_oprofile" path="external/oprofile" remote="git" revision="cm-11.0" />
@@ -50,16 +51,16 @@
 	
 		<!-- Android-afl - Fuzzing project for android -->
   <project name="ele7enxxh/android-afl" path="android-afl" remote="git" revision="master" />
-	
+
 		<!-- CAF Sources -->
-  <project name="quic/la/platform/external/pixman" path="external/pixman" remote="caf" />
-  <project name="quic/la/platform/vendor/qcom/msm8916" path="vendor/qcom/msm8916" remote="caf" />
-  <project name="quic/la/platform/vendor/qcom/msm8916_32" path="vendor/qcom/msm8916_32" remote="caf" />
-  <project name="quic/la/platform/vendor/qcom/msm8909w" path="vendor/qcom/msm8909w" remote="caf" />
-  <project name="quic/la/platform/vendor/qcom/cobalt" path="vendor/qcom/cobalt" remote="caf" />
-  <project name="quic/la/platform/vendor/qcom/cobalt_32" path="vendor/qcom/cobalt_32" remote="caf" />
-  <project name="quic/la/platform/hardware/qcom/msm8x09" path="hardware/qcom/msm8x09" remote="caf" />
-  <project name="quic/la/platform/bootable/recovery" path="bootable/recovery-caf" remote="caf" />
+  <project name="quic/la/platform/external/pixman" path="external/pixman" remote="caf" revision="LNX.LA.3.8_RB1.2" />
+  <project name="quic/la/platform/vendor/qcom/msm8916" path="vendor/qcom/msm8916" remote="caf" revision="LA.BR.1.2.9" />
+  <project name="quic/la/platform/vendor/qcom/msm8916_32" path="vendor/qcom/msm8916_32" remote="caf" revision="	LA.BR.1.2.9_rb1.27" />
+  <project name="quic/la/platform/vendor/qcom/msm8909w" path="vendor/qcom/msm8909w" remote="caf" revision="LA.BR.1.2.9_rb1.9" />
+  <project name="quic/la/platform/vendor/qcom/cobalt" path="vendor/qcom/cobalt" remote="caf" revision="qcom-devices.lnx.1.9.r5-rel" />
+  <project name="quic/la/platform/vendor/qcom/cobalt_32" path="vendor/qcom/cobalt_32" remote="caf" revision="qcom-devices.lnx.1.0.r17-rel" />
+  <project name="quic/la/platform/hardware/qcom/msm8x09" path="hardware/qcom/msm8x09" remote="caf" revision="aosp-new/master" />
+  <project name="quic/la/platform/bootable/recovery" path="bootable/recovery-caf" remote="caf" revision="aosp-new/master" />
 
 		
 		<!--Repositories to remove-->
