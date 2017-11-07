@@ -1,80 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	
-	<remote  name="git"
-	fetch="https://github.com/" />
-	
-	<remote name="caf"
-	fetch="https://source.codeaurora.org/" />
-	
+<remote fetch="https://github.com/" name="git" />
+
+<!-- Alcatel POP35 -->
+		<project name="zombah/android_device_alcatel_pop35" path="device/alcatel/zombah/pop35" remote="git" revision="cm-12.1" />
+		<project name="zombah/android_kernel_alcatel_msm8909" path="kernel/alcatel/zombah/msm8909" remote="git" revision="cm-12.1-wip" />
+		<project name="zombah/proprietary_vendor_alcatel_pop35" path="vendor/alcatel/zombah/pop35" remote="git" revision="cm-12.1" />
+
+<!-- Alcatel POP35  5065n -->
+		<project name="slickrickstyle/android_device_alcatel_pop35" path="device/alcatel//pop35" remote="private" />
+		<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/pop35" remote="private" revision="cm-14.1" />
+
+<!-- Samsung KLTE -->
+		<project name="LineageOS/android_device_samsung_klte-common" path="device/samsung/klte-common" remote="git" revision="cm-14.1" />
+		<project name="LineageOS/android_device_samsung_klte" path="device/samsung/klte" remote="git" revision="cm-14.1" />
+		<project name="LineageOS/android_kernel_samsung_klte" path="kernel/samsung/klte" remote="git" revision="cm-14.1" />
 		
-		<!-- Alcatel Pop3 (5) 5065D -->
-  <project path="device/alcatel/pop35" name="zombah/android_device_alcatel_pop35" remote="git" revision="cm-12.1" /> 
-  <project path="kernel/alcatel/msm8909" name="zombah/android_kernel_alcatel_msm8909" remote="git" revision="cm-12.1-wip" />
-  <project path="vendor/alcatel/pop35" name="zombah/proprietary_vendor_alcatel_pop35" remote="git" revision="cm-12.1" />
-	
-		<!-- Samsung SM-G900F - klte -->
-  <project name="LineageOS/android_device_samsung_klte-common" path="device/samsung/klte-common" remote="git" revision="cm-14.1" />
-  <project name="LineageOS/android_device_samsung_klte" path="device/samsung/klte" remote="git" revision="cm-14.1" />
-  <project name="LineageOS/android_kernel_samsung_klte" path="kernel/samsung/klte" remote="git" revision="cm-14.1" />
-
-		<!-- kernel -->
-  <project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/pop35" remote="private" revision="cm-14.1" />
-  <project name="LineageOS/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="git" revision="cm-14.1" />
-	
-		<!-- device -->
-	
-		<!-- vendor -->
-	
-		<!-- LineageOS common -->
-  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="git" revision="cm-14.1" />
-  <project name="LineageOS/android_external_busybox" path="external/busybox" remote="git" revision="cm-14.1" />
-  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="git" revision="cm-14.1" />
-  <project name="LineageOS/android_external_arduino" path="external/arduino" remote="git" revision="cm-11.0" />
-  <project name="LineageOS/android_external_checkpolicy" path="external/checkpolicy" remote="git" revision="cm-12.1" />
-  <project name="LineageOS/android_external_chromium_org" path="external/chromium_org" remote="git" revision="cm-12.1" />
-  <project name="LineageOS/android_external_gcc-demangle" path="external/gcc-demangle" remote="git" revision="cm-11.0" />
-  <project name="LineageOS/android_external_genext2fs" path="external/genext2fs" remote="git" revision="cm-11.0" />
-  <project name="LineageOS/android_external_jpeg" path="external/jpeg" remote="git" revision="cm-13.0" />
-  <project name="LineageOS/android_external_libsepol" path="external/libsepol" remote="git" revision="cm-13.0" />
-  <project name="LineageOS/android_external_linux-tools-perf" path="external/linux-tools-perf" remote="git" revision="cm-13.0" />
-  <project name="LineageOS/android_external_oprofile" path="external/oprofile" remote="git" revision="cm-11.0" />
-  <project name="LineageOS/android_external_stressapptest" path="external/stressapptest" remote="git" revision="cm-11.0" />
-	
-		<!-- TWRP -->
-  <project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="git" revision="android-7.1" />
-	
-		<!-- Aroma file manager for recovery -->
-  <project name="amarullz/AROMA-Filemanager" path="bootable/recovery-twrp/aromafm" remote="git" revision="master" />
-  <project name="dkati/Optimized-AromaInstaller" path="aroma" remote="git" revision="opt-cm-14.1" />
-
-	
-		<!-- Android-afl - Fuzzing project for android -->
-  <project name="ele7enxxh/android-afl" path="android-afl" remote="git" revision="master" />
-
-		<!-- CAF Sources -->
-  <project name="quic/la/platform/external/pixman" path="external/pixman" remote="caf" revision="LNX.LA.3.8_RB1.2" />
-  <project name="quic/la/platform/vendor/qcom/msm8916" path="vendor/qcom/msm8916" remote="caf" revision="LA.BR.1.2.9" />
-  <project name="quic/la/platform/vendor/qcom/msm8916_32" path="vendor/qcom/msm8916_32" remote="caf" revision="	LA.BR.1.2.9_rb1.27" />
-  <project name="quic/la/platform/vendor/qcom/msm8909w" path="vendor/qcom/msm8909w" remote="caf" revision="LA.BR.1.2.9_rb1.9" />
-  <project name="quic/la/platform/vendor/qcom/cobalt" path="vendor/qcom/cobalt" remote="caf" revision="qcom-devices.lnx.1.9.r5-rel" />
-  <project name="quic/la/platform/vendor/qcom/cobalt_32" path="vendor/qcom/cobalt_32" remote="caf" revision="qcom-devices.lnx.1.0.r17-rel" />
-  <project name="quic/la/platform/hardware/qcom/msm8x09" path="hardware/qcom/msm8x09" remote="caf" revision="aosp-new/master" />
-  <project name="quic/la/platform/bootable/recovery" path="bootable/recovery-caf" remote="caf" revision="aosp-new/master" />
-
+<!-- Kernels -->
+		<project name="LineageOS/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="git" revision="cm-14.1" />
 		
-		<!--Repositories to remove-->
-  <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
-  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
-  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
-  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
-  <remove-project name="platform/prebuilts/go/darwin-x86" />
-  <remove-project name="platform/prebuilts/ninja/darwin-x86" />
-  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
-	
-	</manifest>
-	
+<!-- LineageOS common -->
+		<project name="LineageOS/android_external_stlport" path="external/stlport" remote="git" revision="cm-14.1" />
+		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="git" revision="cm-14.1" />
+		<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="git" revision="cm-14.1" />
+		
+<!-- TWRP -->
+		<project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="git" revision="android-7.1" />
+		
+<!-- Aroma -->
+		<project name="amarullz/AROMA-Filemanager" path="bootable/recovery-twrp/aromafm" remote="git" revision="master" />
+		<project name="dkati/Optimized-AromaInstaller" path="aroma" remote="git" revision="opt-cm-14.1" />
+		
+<!-- Android-afl fuzzing -->
+		<project name="ele7enxxh/android-afl" path="android-afl" remote="git" revision="master" />
+		
+<!-- Remove projects -->
+		<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+		<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+		<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
+		<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+		<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
+		<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+		<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" />
+		<remove-project name="platform/prebuilts/gdb/darwin-x86" />
+		<remove-project name="platform/prebuilts/go/darwin-x86" />
+		<remove-project name="platform/prebuilts/ninja/darwin-x86" />
+		<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+		
+</manifest>
