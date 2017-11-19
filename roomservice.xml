@@ -2,13 +2,8 @@
 <manifest>
 <remote fetch="https://github.com/" name="git" />
 
-<!-- Alcatel POP35 -->
-		<project name="zombah/android_device_alcatel_pop35" path="device/alcatel/zombah/pop35" remote="git" revision="cm-12.1" />
-		<project name="zombah/android_kernel_alcatel_msm8909" path="kernel/alcatel/zombah/msm8909" remote="git" revision="cm-12.1-wip" />
-		<project name="zombah/proprietary_vendor_alcatel_pop35" path="vendor/alcatel/zombah/pop35" remote="git" revision="cm-12.1" />
-
 <!-- Alcatel POP35  5065n -->
-		<project name="slickrickstyle/android_device_alcatel_pop35" path="device/alcatel//pop35" remote="private" />
+		<project name="slickrickstyle/android_device_alcatel_pop35" path="device/alcatel/pop35" remote="private" revision="twrp" />
 		<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/pop35" remote="private" revision="cm-14.1" />
 
 <!-- Samsung KLTE -->
@@ -16,6 +11,9 @@
 		<project name="LineageOS/android_device_samsung_klte" path="device/samsung/klte" remote="git" revision="cm-14.1" />
 		<project name="LineageOS/android_kernel_samsung_klte" path="kernel/samsung/klte" remote="git" revision="cm-14.1" />
 		
+<!-- Samsung j327pop 
+	<project name="slickrickstyle/android_kernel_samsung_msm8937" path="kernel/samsung/msm8937" remote="private" revision="master" /> -->
+
 <!-- Kernels -->
 		<project name="LineageOS/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="git" revision="cm-14.1" />
 		
