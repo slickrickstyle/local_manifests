@@ -1,38 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<remote fetch="https://github.com/" name="git" />
-
-<!-- Alcatel POP35  5065n -->
-		<project name="slickrickstyle/android_device_alcatel_pop35" path="device/alcatel/pop35" remote="private" revision="twrp" />
-		<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/pop35" remote="private" revision="cm-14.1" />
-
-<!-- Samsung KLTE -->
-		<project name="LineageOS/android_device_samsung_klte-common" path="device/samsung/klte-common" remote="git" revision="cm-14.1" />
-		<project name="LineageOS/android_device_samsung_klte" path="device/samsung/klte" remote="git" revision="cm-14.1" />
-		<project name="LineageOS/android_kernel_samsung_klte" path="kernel/samsung/klte" remote="git" revision="cm-14.1" />
+	<remote 
+		fetch="https://github.com/" 
+		name="git" />
 		
-<!-- Samsung j327pop 
-	<project name="slickrickstyle/android_kernel_samsung_msm8937" path="kernel/samsung/msm8937" remote="private" revision="master" /> -->
-
-<!-- Kernels -->
-		<project name="LineageOS/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="git" revision="cm-14.1" />
-		
-<!-- LineageOS common -->
-		<project name="LineageOS/android_external_stlport" path="external/stlport" remote="git" revision="cm-14.1" />
-		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="git" revision="cm-14.1" />
-		<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="git" revision="cm-14.1" />
-		
-<!-- TWRP -->
-		<project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="git" revision="android-7.1" />
-		
-<!-- Aroma -->
-		<project name="amarullz/AROMA-Filemanager" path="bootable/recovery-twrp/aromafm" remote="git" revision="master" />
-		<project name="dkati/Optimized-AromaInstaller" path="aroma" remote="git" revision="opt-cm-14.1" />
-		
-<!-- Android-afl fuzzing -->
-		<project name="ele7enxxh/android-afl" path="android-afl" remote="git" revision="master" />
-		
-<!-- Remove projects -->
+	<!-- Remove Projects -->
 		<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
 		<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
 		<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
@@ -45,4 +17,30 @@
 		<remove-project name="platform/prebuilts/ninja/darwin-x86" />
 		<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 		
+	<!-- My Github REPOS -->
+		<!-- Alcatel POP35 5065n -->
+			<project name="slickrickstyle/android_kernel_alcatel_pop35" path="kernel/alcatel/msm8909" remote="private" revision="cm-14.1" />
+		<!-- Huawei scale -->
+			<project name="slickrickstyle/android_device_huawei_scale" path="device/huawei/scale" remote="private" revision="cm-14.1" />
+			<project name="slickrickstyle/android_kernel_huawei_msm8916" path="kernel/huawei/msm8916" remote="private" revision="cm-14.1" />
+			<project name="slickrickstyle/proprietary_vendor_huawei" path="vendor/huawei" remote="private" revision="cm-14.1" />
+		<!-- Common -->
+			<project name="slickrickstyle/android_device_cyanogen_msm8909-common" path="device/cyanogen/msm8909-common" remote="private" revision="cm-14.1" />
+
+	<!-- LineageOS Common Sources -->
+		<project name="LineageOS/android_external_stlport" path="external/stlport" remote="git" revision="cm-14.1" />
+		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="git" revision="cm-14.1" />
+		<project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="git" revision="cm-14.1" />
+		<project name="LineageOS/android_device_cyanogen_msm8916" path="device/cyanogen/msm8916" remote="git" revision="cm-14.1" />
+		<project name="lineageos/android_device_qcom_common" path="device/qcom/common" revision="cm-14.1" />
+
+
+	<!-- TWRP Recovery source -->
+		<project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="git" revision="android-7.1" />
+
+	<!-- AROMA Repos -->
+		<project name="amarullz/AROMA-Filemanager" path="bootable/recovery-twrp/aromafm" remote="git" revision="master" />
+		<project name="dkati/Optimized-AromaInstaller" path="aroma" remote="git" revision="opt-cm-14.1" />
+		
 </manifest>
+
